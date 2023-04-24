@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #226DAA;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+  }
+  
+  /* Biografi Page Styles */
+  .image-slider {
+    position: relative;
+    height: 500px;
+    margin: 2rem 0;
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    display: flex;
+    position: center;
+    height: 100%;
+    width: 300%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    border: none;
+    background-color: #226DAA;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: white;
+    color: #226DAA;
+  }
+  
+  .btn.active {
+    background-color: white;
+    color: #226DAA;
+  }
+  
+  .slide.left {
+    transform: translateX(-100%);
+  }
+  
+  .slide.center {
+    transform: translateX(0%);
+  }
+  
+  .slide.right {
+    transform: translateX(100%);
+  }
+  
