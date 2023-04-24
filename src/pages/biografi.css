@@ -27,18 +27,7 @@ body {
   text-align: center;
   margin: 2rem 0;
 }
-/*
-.cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-}*/
+
 
 /* Biografi Page Styles */
 .image-slider {
