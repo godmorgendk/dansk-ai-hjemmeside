@@ -37,7 +37,7 @@ body {
   overflow: hidden;
 }
 
-.slide-container {
+.slideshow-container {
   display: flex;
   position: center;
   height: 100%;

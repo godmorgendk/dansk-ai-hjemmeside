@@ -26,20 +26,21 @@
 				<a href="/pages/biografi.html">Biografi</a>
 			</nav>
 			<h1 class="header">Den nye hud er stål</h1>
+			<div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
 			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="NEXT/Gruppe 6. Hjemmeside/Billeder/_DSF1388.jpg">
+				<div class="slides btn-container">
+					<img src="/assets\Billeder\_DSF1388.jpg"width="500">
 				</div>
 
-				<div class="mySlides fade">
-					<img src="NEXT/Gruppe 6. Hjemmeside/Billeder/275005520_670467087536117_4110257288681212945_n.jpg">
+				<div class="slides btn-container">
+					<img src="/assets\Billeder\275005520_670467087536117_4110257288681212945_n.jpg"width="500">
 				</div>
 
-				<div class="mySlides fade">
-					<img src="NEXT/Gruppe 6. Hjemmeside/Billeder/DNHES Portræt.jpg">
+				<div class="slides btn-container">
+					<img src="/assets\Billeder\DNHES Portræt.jpg" width="500">
 				</div>
 
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 		</div>
@@ -54,7 +55,7 @@
 
 			function showSlides(n) {
 				var i;
-				var slides = document.getElementsByClassName("mySlides");
+				var slides = document.getElementsByClassName("slides");
 				if (n > slides.length) {slideIndex = 1}
 				if (n < 1) {slideIndex = slides.length}
 				for (i = 0; i < slides.length; i++) {
